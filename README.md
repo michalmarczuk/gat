@@ -17,7 +17,7 @@ Set environment variables:
 
 `export DRIVER=chrome`
 
-`TESTS_CONFIG_ENV_FILENAME=test`
+`export TESTS_CONFIG_ENV_FILENAME=test`
 
 
 Run all tests:
