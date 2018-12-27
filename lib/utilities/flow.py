@@ -4,6 +4,8 @@ class Flow:
         self._rest_api_client = rest_api_client
 
     def remove_all_devices(self):
+        """Removes all devices from devices list using rest api"""
+
         hardware_and_software = self._rest_api_client.get.hardware_and_software()
         desktop_os_list = hardware_and_software['data']['desktop_operating_systems_ownerships']
         desktop_os_ids = list(map(lambda a: a['id'], desktop_os_list))

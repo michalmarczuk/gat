@@ -22,7 +22,7 @@ class HardwareSoftwarePage(BasePageObject):
             return False
 
     def update_device(self, os_name, new_os_name):
-        """Updates device on device list
+        """Updates device on devices list
 
         :param os_name: str
         :param new_os_name: str
@@ -39,7 +39,7 @@ class HardwareSoftwarePage(BasePageObject):
         self.__select_os(new_os_name)
 
     def add_device(self, os_name):
-        """Adds device to device list
+        """Adds device to devices list
 
         :param os_name: str
         """
@@ -49,7 +49,7 @@ class HardwareSoftwarePage(BasePageObject):
         self.__select_os(os_name)
 
     def remove_device(self, os_name):
-        """Removes device from device list
+        """Removes device from devices list
 
         :param os_name: str
         """
@@ -61,7 +61,7 @@ class HardwareSoftwarePage(BasePageObject):
         self.wait_until_web_element_not_displayed(remove_button)
 
     def get_device(self, os_name):
-        """Returns device from device list. If device is not on list then returns None
+        """Returns device from devices list. If device is not on list then returns None
 
         :param os_name: str
         :return: WebElement
