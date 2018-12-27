@@ -1,0 +1,10 @@
+{
+  "general": {
+    "domain": "https://testers.testerwork.com",
+    "default_user_email": "michal@marczuk.org",
+    "default_user_password": "ajHok0gAaD5e"
+  },
+  "rest_api": {
+    "domain": "https://gat.gatserver.com/api/testers"
+  }
+}
